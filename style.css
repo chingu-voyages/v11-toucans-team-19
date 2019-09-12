@@ -2,16 +2,30 @@
     box-sizing: border-box;
 }
 
+
+@font-face {
+    font-family: 'Bariol Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bariol Light'), url('bariol_light-webfont.woff') format('woff');
+}
+    
+
 body {
     margin: 0;
-    background-color: red;
+    font-family: 'Bariol Light', Times New Roman;
 }
 
 #a {
     cursor: pointer;
 }
 
+
 /* Header CSS */
+
+.donutlogo {
+    height: 55px;
+}
 
 .top-header{
     background-color: hsl(267, 100%, 26%);
@@ -19,6 +33,8 @@ body {
     z-index: 100;
     width: 100%;
     height: 76px;
+    border: red 1px solid;
+
 }
 
 .top-nav {
@@ -62,3 +78,50 @@ ul {
     transition: background-color .3s;
 }
 
+/* Description Section CSS */
+.description-section {
+    background-color: hsl(267, 100%, 26%);
+    position: relative;    
+    height: 780px;
+    padding-top: 122px;
+}
+
+.description-part1 {
+    padding: 0 20px;
+    margin: auto;
+    max-width: 1180px;
+}
+
+.description-section-leftside {
+    max-width: 600px;
+    color: hsl(0, 0%, 100%);
+}
+
+.howbig {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-top: 43px;
+    line-height: 1.1;
+}
+
+a {
+    color: hsl(256, 100%, 66%);
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.slack-button {
+    margin-top: -36px;
+    width: 215px;
+}
+
+img {
+    border-style: none;
+}
+
+.blond-girl {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    max-width: 100%;
+}
