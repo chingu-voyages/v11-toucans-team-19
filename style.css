@@ -1,4 +1,4 @@
-
+*{
     box-sizing: border-box;
 }
 
@@ -125,6 +125,110 @@ img {
     left: 50%;
     max-width: 100%;
 }
+
+/* Logos CSS */
+.logo{
+  padding: 60px 0;
+  background: hsl(210, 14%, 95%);
+}
+
+.logo-container{
+  width: 100%;
+  max-width: 1180px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.logo-list {
+  display: flex;
+  flex-wrap: wrap;
+    -webkit-box-align: center;
+  align-items: center;
+}
+
+.logo-item {
+  width: 25%;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+img.logo-image {
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* Features CSS */
+.features {
+  margin:60px auto 0;
+  max-width: 1180px;
+}
+
+.features img{
+  max-width: 90%;
+  position: absolute;
+  z-index: -1;
+}
+
+.pairing-block,
+.onboarding-block{
+  position: relative;
+}
+
+.pairing-image {
+  right: 85px;
+}
+
+.onboarding-image {
+  left: 81px;
+}
+
+.feature-descriptions {
+  display: flex;
+}
+
+feature-descriptions h3 {
+  font-size: 3.75rem;
+  line-height: 1.1;
+  font-weight: 300;
+  color: hsl(265, 100%, 27%);
+  margin-bottom: -17px;
+  margin-top: 5px;
+}
+
+.feature-paragraph {
+  color: hsl(265, 100%, 27%);
+  font-size: 1.875rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.pairing-text,
+.onboarding-text {
+  background-color: hsl(210, 14%, 95%);
+  border-radius: 10px;
+  margin: 245px 20px 20px 20px;
+  padding: 20px;
+}
+
+.pairing-link {
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: color .3s;
+  color: hsl(256, 100%, 66%);
+  text-decoration: none;
+}
+
+.pairing-link:hover {
+  color: hsl(265, 100%, 27%);
+}
+
+.pairing-link:after {
+  content: " \00BB";
+}
+
+/* Jinyoung CSS */
 #testimonial {
   display:flex;
   margin:6em;
@@ -202,6 +306,6 @@ footer {
   border:1px solid black;
 }
 
-.column3 {
-}
+/* .column3 {
+} */
  
