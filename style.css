@@ -1,8 +1,287 @@
-* {
-  font-family:arial;
-  color:#370085;
+
+@font-face {
+  font-family: 'Bariol Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bariol Light'), url('bariol_light-webfont.woff') format('woff');
 }
 
+*{
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Bariol Light', Times New Roman;
+    font-size: 16px;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+#a {
+    cursor: pointer;
+}
+
+
+/* Header CSS */
+
+.donutlogo {
+    height: 55px;
+}
+
+.top-header{
+    background-color: hsl(267, 100%, 26%);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 76px;
+}
+
+.top-nav {
+    padding: 39px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: auto;
+    transition: all .3s;
+        -webkit-transition: all .3s;
+}
+
+.scroll-affix-header .top-header {
+  background:  hsla(0, 0%, 100%, 1);
+  -webkit-box-shadow: 0 0 10px hsla(0, 0%, 0%, .5);
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, .5);
+}
+
+.scroll-affix-header .top-nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.scroll-affix-header .donutlogo .letter {
+  fill: hsl(265, 100%, 27%) !important;
+}
+
+.scroll-affix-header .top-nav a,
+.scroll-affix-header .mobile-menu-toggle {
+  color: hsl(265, 100%, 27%);
+}
+
+.scroll-affix-header .top-nav a:hover
+.mobile-menu-toggle:hover {
+  color: hsl(256, 100%, 66%);
+}
+
+.scroll-affix-header .top-nav .sign-in {
+  color: hsl(265, 100%, 27%);
+  background-color: hsl(264, 36%, 89%);
+}
+
+.scroll-affix-header .top-nav .sign-in:hover {
+  background-color: hsl(265, 36%, 82%);
+}
+
+.mobile-sign-in,
+.mobile-menu-toggle,
+input#menu-btn {
+  display: none;
+}
+
+ul {
+    /* display: flex;
+    justify-content: flex-end; */
+    margin-right: 1em;
+    padding-inline-start: 40px;
+}
+
+.nav-menu ul li {
+    list-style: none;
+    display: inline-flex;
+    font-size: .875rem;
+    letter-spacing: .5px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.nav-menu ul li a {
+    color: hsla(0, 0%, 100%, .75);
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.nav-menu ul li a:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.nav-menu ul li a.sign-in {
+    padding: 10px 20px;
+    font-weight: 600;
+    background-color: hsla(0, 0%, 100%, .15);
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    transition: background-color .3s;
+}
+
+.nav-menu ul li a.sign-in:hover {
+  background-color: hsla(0, 0%, 100%, .25);
+}
+
+/* Description Section CSS */
+.description-section {
+    background-color: hsl(267, 100%, 26%);
+    position: relative;
+    height: 780px;
+    padding-top: 122px;
+}
+
+.description-part1 {
+    padding: 0 20px;
+    margin: auto;
+    max-width: 1180px;
+}
+
+.description-section-leftside {
+    max-width: 600px;
+    color: hsl(0, 0%, 100%);
+}
+
+.howbig {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-top: 43px;
+    line-height: 1.1;
+}
+
+a {
+    color: hsl(256, 100%, 66%);
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.slack-button {
+    margin-top: -36px;
+    width: 215px;
+}
+
+img {
+    border-style: none;
+}
+
+.blond-girl {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    max-width: 100%;
+}
+
+/* Logos CSS */
+.logo{
+  padding: 60px 0;
+  background: hsl(210, 14%, 95%);
+}
+
+.logo-container{
+  width: 100%;
+  max-width: 1180px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.logo-list {
+  display: flex;
+  flex-wrap: wrap;
+    -webkit-box-align: center;
+  align-items: center;
+}
+
+.logo-item {
+  width: 25%;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+img.logo-image {
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* Features CSS */
+.features {
+  margin:60px auto 0;
+  max-width: 1180px;
+}
+
+.features img{
+  max-width: 90%;
+  position: absolute;
+  z-index: -1;
+}
+
+.pairing-block,
+.onboarding-block{
+  position: relative;
+}
+
+.pairing-image {
+  right: 85px;
+}
+
+.onboarding-image {
+  left: 81px;
+}
+
+.feature-descriptions {
+  display: flex;
+}
+
+feature-descriptions h3 {
+  font-size: 3.75rem;
+  line-height: 1.1;
+  font-weight: 300;
+  color: hsl(265, 100%, 27%);
+  margin-bottom: -17px;
+  margin-top: 5px;
+}
+
+.feature-paragraph {
+  color: hsl(265, 100%, 27%);
+  font-size: 1.875rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.pairing-text,
+.onboarding-text {
+  background-color: hsl(210, 14%, 95%);
+  border-radius: 10px;
+  margin: 245px 20px 20px 20px;
+  padding: 20px;
+}
+
+.pairing-link {
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: color .3s;
+  color: hsl(256, 100%, 66%);
+  text-decoration: none;
+}
+
+.pairing-link:hover {
+  color: hsl(265, 100%, 27%);
+}
+
+.pairing-link:after {
+  content: " \00BB";
+}
+
+/* Jinyoung CSS */
 #testimonial {
   display:flex;
   margin:6em;
@@ -79,39 +358,270 @@ footer {
   text-decoration:none;
 }
 
+@media (max-width: 879px) {
+  .description-section {
+    padding-top: 63px;
+    height: 757px;
+  }
+
+  .howbig {
+    font-size: 2.625rem;
+  }
+
+  .slack-button {
+    margin-top: -6px;
+  }
+
+  .blond-girl {
+    left: 0;
+  }
+
+  .logo{
+    padding: 40px 0;
+  }
+
+  .logo-item {
+    width:50%;
+  }
+  .features {
+    margin: 24px auto 0;
+  }
+
+  .features img {
+    position: relative;
+  }
+
+  .feature-descriptions {
+    flex-direction: column;
+  }
+
+  .feature-descriptions h3 {
+    font-size: 2.5rem;
+  }
+
+  .feature-paragraph {
+    font-size: 1.125rem;
+  }
+
+  .pairing-image {
+    right: 8px;
+    top: 15px;
+  }
+
+  .onboarding-image {
+    left: 50px;
+    top: 18px;
+  }
+
+  .pairing-text,
+  .onboarding-text {
+    margin-top: -50px;
+  }
+
+  .pairing-link {
+    font-size: 1.125rem;
+  }
+
+  .top-header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    height: 54px;
+  }
+
+  .scroll-affix-header .top-header {
+    background:  hsla(0, 0%, 100%, 1);
+    -webkit-box-shadow: 0 0 10px hsla(0, 0, 0, .5);
+    box-shadow: 0 0 10px hsla(0, 0, 0, .5);
+    padding: 0 20px;
+  }
+
+  .donutlogo {
+  height: 34px;
+  }
+
+  .scroll-affix-header .top-nav > a svg {
+    margin-bottom: 10px;
+    transition: margin-bottom .3s;
+  }
+
+  .scroll-affix-header .donutlogo .letter {
+    fill: hsl(265, 100%, 27%) !important;
+  }
+
+  .scroll-affix-header .top-nav a {
+    color: hsl(267, 100%, 26%);
+  }
+
+  .scroll-affix-header .mobile-sign-in,
+  .scroll-affix-header .mobile-menu-toggle {
+    transition: margin-top .3s;
+    margin-top: -15px;
+  }
+
+  .flex-row .top-nav {
+    display: flex;
+  }
+
+  .top-nav {
+    padding: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .top-nav .logo-link {
+    display: block;
+    width: 111px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+
+  .top-nav > a img {
+    height: 34px;
+    max-width: 100%;
+    vertical-align: top;
+  }
+
+  .mobile-sign-in,
+  .mobile-menu-toggle {
+    display: inline-block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color:  hsla(0, 0%, 100%, 1);
+    margin-right: 20px;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+  }
+
+  span.mobile-menu-toggle {
+    font-size: 2em;
+    color:  hsla(0, 0%, 100%, 1);
+    cursor: pointer;
+  }
+
+  .sign-in {
+    display: none;
+  }
+
+  .nav-menu ul a {
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: 300;
+    line-height: 1.2;
+    list-style: none;
+    margin: 0;
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  #menu-btn > label:hover {
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: flex;
+    position: fixed;
+    top: 74px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 74px);
+    padding: 20px 0;
+    background: hsl(267, 100%, 26%);
+    transition: opacity .3s, visibility .3s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  #menu-btn:checked ~ .nav-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .nav-menu ul {
+    list-style: none;
+    margin: 0;
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  .nav-menu ul.centralize {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1180px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nav-menu ul li {
+    margin: 10px 0 0;
+    list-style: none;
+    clear: both;
+    display: block;
+  }
+
+  .nav-menu ul.centralize li a {
+    color:  hsla(0, 0%, 100%, 1);
+    font-size: 1.875rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+  }
+
+  .nav-menu ul.centralize li a:hover {
+    color: hsl(256, 100%, 66%);
+  }
+}
+
+/* max 480px */
+
 @media (max-width: 480px) {
-  #testimonial {
-    display:flex;
-    flex-direction:column;
+
+  .description-section {
+    height: 745px;
   }
-  
-  .grid-left {
-    display:flex;
-    justify-content: center;
-    width:100%;
-  }
- 
-  .grid-left h1 {
-    font-size:1em;
-  }
-  
-  .grid-right {
-    flex-direction:column;
-  }
-  
-  #footer {
-    display:flex;
-    flex-direction:column;
-    margin-left:-0.4em;
-  }
-  
-  .column1,.column2, .column3 {
-    display:flex;
-    width:90%;
-    margin:1em;
-  }
-  
-  .column2-left ul {
-    padding-left:0px;
-  }
+
+  @media (max-width: 480px) {
+    #testimonial {
+      display:flex;
+      flex-direction:column;
+    }
+
+    .grid-left {
+      display:flex;
+      justify-content: center;
+      width:100%;
+    }
+
+    .grid-left h1 {
+      font-size:1em;
+    }
+
+    .grid-right {
+      flex-direction:column;
+    }
+
+    #footer {
+      display:flex;
+      flex-direction:column;
+      margin-left:-0.4em;
+    }
+
+    .column1,.column2, .column3 {
+      display:flex;
+      width:90%;
+      margin:1em;
+    }
+
+    .column2-left ul {
+      padding-left:0px;
 }
