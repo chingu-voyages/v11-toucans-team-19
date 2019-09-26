@@ -79,10 +79,6 @@ footer {
   text-decoration:none;
 }
 
-.column2-left .column2-right {
-  border:1px solid black;
-}
-
 @media (max-width: 480px) {
   #testimonial {
     display:flex;
@@ -117,9 +113,5 @@ footer {
   
   .column2-left ul {
     padding-left:0px;
-  }
-  
-  .column1 {
-    padding-left:-10px;
   }
 }
