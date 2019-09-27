@@ -589,8 +589,7 @@ footer {
   .description-section {
     height: 745px;
   }
-
-  @media (max-width: 480px) {
+  
     #testimonial {
       display:flex;
       flex-direction:column;
@@ -624,4 +623,5 @@ footer {
 
     .column2-left ul {
       padding-left:0px;
+    } 
 }
