@@ -134,7 +134,7 @@ ul {
 /* Description Section CSS */
 .description-section {
     background-color: hsl(267, 100%, 26%);
-    position: relative;    
+    position: relative;
     height: 780px;
     padding-top: 122px;
 }
@@ -285,7 +285,7 @@ feature-descriptions h3 {
 #testimonial {
   display:flex;
   margin:6em;
-  margin-bottom:-0.5em;
+  margin-bottom:1.5em;
 }
 
 .grid-left {
@@ -306,6 +306,10 @@ feature-descriptions h3 {
 
 .grid-right a {
   color:#8052FF;
+}
+
+#graphic img{
+  width:100%;
 }
 
 footer {
@@ -352,11 +356,6 @@ footer {
 
 .column2 a {
   text-decoration:none;
-  
-}
-
-.column2-left .column2-right {
-  border:1px solid black;
 }
 
 .column3 > .social-media ul{
@@ -394,7 +393,7 @@ footer {
   .description-section {
     padding-top: 63px;
     height: 757px;
-  }  
+  }
 
   .howbig {
     font-size: 2.625rem;
@@ -621,5 +620,39 @@ footer {
   .description-section {
     height: 745px;
   }
+  
+    #testimonial {
+      display:flex;
+      flex-direction:column;
+    }
 
+    .grid-left {
+      display:flex;
+      justify-content: center;
+      width:100%;
+    }
+
+    .grid-left h1 {
+      font-size:1em;
+    }
+
+    .grid-right {
+      flex-direction:column;
+    }
+
+    #footer {
+      display:flex;
+      flex-direction:column;
+      margin-left:-0.4em;
+    }
+
+    .column1,.column2, .column3 {
+      display:flex;
+      width:90%;
+      margin:1em;
+    }
+
+    .column2-left ul {
+      padding-left:0px;
+    } 
 }
