@@ -95,8 +95,8 @@ input#menu-btn {
 ul {
     /* display: flex;
     justify-content: flex-end; */
-    margin-right: 1em;
-    padding-inline-start: 40px;
+    /* margin-right: 1em; */
+    padding-inline-start: 0px;
 }
 
 .nav-menu ul li {
@@ -358,6 +358,37 @@ footer {
   text-decoration:none;
 }
 
+.column3 > .social-media ul{
+  display: flex;
+  list-style: none;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.column3 > .social-media ul li{
+  display: block;
+  margin-right: 20px;
+  width: 22px; 
+  height: 22px;
+}
+
+.column3 .social-media a {
+  display: block;
+  width: 22px;
+  height: 22px;
+  color: hsl(256, 100%, 66%);
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.social-media svg{
+  width: 22px;
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+  transform-origin: 50% 50% 0;
+}
+ 
 @media (max-width: 879px) {
   .description-section {
     padding-top: 63px;
